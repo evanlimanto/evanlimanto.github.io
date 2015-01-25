@@ -1,0 +1,16 @@
+body {
+	padding: 50px;
+	font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+iframe {
+	margin: 5px 0;
+}
+
+header.row {
+	padding: 5px 0px;
+}
+
+#title {
+	font-size: 1.5em;
+}
