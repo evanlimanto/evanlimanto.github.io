@@ -2,6 +2,10 @@ body {
 	background-color: #e9eaed;
 }
 
+a {
+	color: #3b5998;
+}
+
 hr {
 	border-top: 1px solid rgba(0,0,0,0.2);
 }
@@ -42,7 +46,7 @@ textarea {
 	display: block;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	height: 42px;
+	height: 43px;
 	left: 0px;
 	line-height: 20px;
 	min-width: 981px;
@@ -52,18 +56,25 @@ textarea {
 	top: 0px;
 	width: 1443px;
 	z-index: 301;
+	min-height: 43px;
 }
 
-#navbar li, #navbar li a {
+#navbar li {
+	
+}
+
+#navbar li > a {
+	padding: 7px 15px;
+	color: white;
+}
+
+#navbar ul, #navbar li, #navbar li a {
 	border-radius: 0px;
+	height: 43px;
 }
 
 #navbar li a:hover {
 	background-color: inherit;
-}
-
-#navbar li a {
-	color: white;
 }
 
 #sidebar {
@@ -143,8 +154,21 @@ textarea {
 	top: 3px;
 }
 
-.event-date {
-	color: #767676;
+.icon-fb {
+	-webkit-background-size: 312px 184px;
+	background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y4/r/eORErSKXE3r.png);
+	background-position: -244px -62px;
+	background-repeat: no-repeat;
+	background-size: 312px 184px;
+	color: rgb(59, 89, 152);
+	cursor: pointer;
+	direction: ltr;
+	display: block;
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	height: 28px;
+	width: 28px;
 }
 
 .icon-online {
@@ -157,6 +181,10 @@ textarea {
 	display: inline-block;
 }
 
+.grey-text {
+	color: #767676;
+}
+
 .user-name {
 	margin-left: 15px;
 	text-align: left;
@@ -164,10 +192,6 @@ textarea {
 
 .chat-text {
 	margin-left: 10px;
-}
-
-.chat-text a {
-	color: #3b5998;
 }
 
 .chat-item {
