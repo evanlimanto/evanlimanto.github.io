@@ -54,6 +54,18 @@ textarea {
 	z-index: 301;
 }
 
+#navbar li, #navbar li a {
+	border-radius: 0px;
+}
+
+#navbar li a:hover {
+	background-color: inherit;
+}
+
+#navbar li a {
+	color: white;
+}
+
 #sidebar {
 	-webkit-background-clip: padding-box;
 	-webkit-box-shadow: rgb(224, 224, 224) 2px 0px 2px -2px inset;
@@ -148,6 +160,18 @@ textarea {
 .user-name {
 	margin-left: 15px;
 	text-align: left;
+}
+
+.chat-text {
+	margin-left: 10px;
+}
+
+.chat-text a {
+	color: #3b5998;
+}
+
+.chat-item {
+	margin: 10px 0 0;
 }
 
 .device {
@@ -310,4 +334,42 @@ textarea {
 	display: inline-block;
 	color: rgb(166, 166, 166);
 	margin-top: 7px;
+}
+
+.icon-video {
+	-webkit-background-size: 312px 680px;
+	background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yB/r/dnlPjT0ByhB.png);
+	background-position: -272px -258px;
+	background-repeat: no-repeat;
+	background-size: 312px 680px;
+	color: rgb(59, 89, 152);
+	cursor: pointer;
+	direction: ltr;
+	display: inline-block;
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 12px;
+	height: 26px;
+	line-height: 16px;
+	margin-right: -1px;
+	opacity: 0.300000011920929;
+	text-align: left;
+	text-decoration: none;
+	vertical-align: top;
+	width: 25px;
+	zoom: 1;
+}
+
+#calls {
+	position: absolute;
+	bottom: 2%;
+	color: rgba(0,0,0,0.2);
+	width: 100%;
+}
+
+#calls > li {
+	width: 49.5%;
+}
+
+#calls > li > a:hover, #calls > li > a:focus {
+	background-color: rgb(246, 247, 248);
 }
