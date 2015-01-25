@@ -1,0 +1,313 @@
+body {
+	background-color: #e9eaed;
+}
+
+hr {
+	border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+textarea {
+	border-radius: 0px !important;
+}
+
+#navbar {
+	-webkit-background-size: 1px 42px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.521569) 0px 2px 2px -2px;
+	background-color: rgb(58, 87, 149);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABUCAMAAACfvxb8AAAAeFBMV…XjhMaxtCPqxBmNolVc0Nxu6IuGMbUHuqNmsbF2rO2DJhg/RwEE6AR0V3kAAAAASUVORK5CYII=);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	background-size: 1px 42px;
+	border-bottom-color: rgb(19, 55, 131);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(51, 51, 51);
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: rgb(51, 51, 51);
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: rgb(51, 51, 51);
+	border-top-style: none;
+	border-top-width: 0px;
+	box-shadow: rgba(0, 0, 0, 0.521569) 0px 2px 2px -2px;
+	box-sizing: border-box;
+	color: rgb(51, 51, 51);
+	direction: ltr;
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	height: 42px;
+	left: 0px;
+	line-height: 20px;
+	min-width: 981px;
+	position: fixed;
+	right: 0px;
+	text-align: left;
+	top: 0px;
+	width: 1443px;
+	z-index: 301;
+}
+
+#sidebar {
+	-webkit-background-clip: padding-box;
+	-webkit-box-shadow: rgb(224, 224, 224) 2px 0px 2px -2px inset;
+	-webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+	background-color: rgb(246, 247, 248);
+	border-left-color: rgb(204, 204, 204);
+	border-left-style: solid;
+	border-left-width: 1px;
+	box-shadow: rgb(224, 224, 224) 2px 0px 2px -2px inset;
+	color: rgb(20, 24, 35);
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 12px;
+	height: 100%;
+	line-height: 16px;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	padding: 0;
+}
+
+.spacing {
+	color: rgb(20, 24, 35);
+	direction: ltr;
+	display: block;
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 12px;
+	height: 43px;
+	line-height: 16px;
+	margin-top: 0px;
+	text-align: left;
+	width: 205px;
+}
+
+.tab-pane {
+	padding: 15px;
+}
+
+#tabs li {
+	float: left;
+	width: 50%;
+	text-align: center;
+	border-right: 1px solid rgb(204, 204, 204);
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+#tabs li.last {
+	border-right: 0px;
+}
+
+.icon-clock {
+	-webkit-background-size: 53px 235px;
+	background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y6/r/0CY2c8-m8b0.png);
+	background-position: 0px -218px;
+	background-repeat: no-repeat;
+	background-size: 53px 235px;
+	border-collapse: collapse;
+	color: rgb(20, 24, 35);
+	direction: ltr;
+	display: inline-block;
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	height: 16px;
+	line-height: 15.3599996566772px;
+	list-style-type: none;
+	margin-bottom: 0px;
+	margin-left: 12px;
+	margin-right: 10px;
+	text-align: left;
+	width: 16px;
+	word-wrap: break-word;
+	zoom: 1;
+	position: relative;
+	top: 3px;
+}
+
+.event-date {
+	color: #767676;
+}
+
+.icon-online {
+	background-image: url('http://fbstatic-a.akamaihd.net/rsrc.php/v2/y4/r/eORErSKXE3r.png');
+	width: 7px;
+	height: 7px;
+	background-position: -202px -153px;
+	background-size: 312px 184px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.user-name {
+	margin-left: 15px;
+	text-align: left;
+}
+
+.device {
+	color: #63a924;
+	float: right;
+	font-size: 9px;
+	padding: 8px 0px;
+}
+
+#chat-content {
+	height: 500px;
+	overflow: auto;
+}
+
+#chat {
+	padding-bottom: 20px;
+}
+
+#submit-label {
+	-webkit-background-size: 500px 511px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px 0px;
+	background-color: rgb(91, 116, 168);
+	background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y1/r/-hAD-hVSFnh.png);
+	background-position: 0px -49px;
+	background-repeat: no-repeat;
+	background-size: 500px 511px;
+	border-bottom-color: rgb(26, 53, 110);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(41, 68, 126);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgb(41, 68, 126);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: rgb(47, 71, 122);
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px 0px;
+	color: rgb(102, 102, 102);
+	cursor: pointer;
+	direction: ltr;
+	display: inline-block;
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 20px;
+	line-height: 13px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: top;
+	white-space: nowrap;
+	width: 50px;
+	word-wrap: break-word;
+	zoom: 1;
+}
+#submit-btn {
+	-webkit-appearance: none;
+	-webkit-background-clip: border-box;
+	-webkit-background-origin: padding-box;
+	-webkit-background-size: auto;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: none;
+	-webkit-writing-mode: horizontal-tb;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-origin: padding-box;
+	background-size: auto;
+	border-bottom-color: rgb(255, 255, 255);
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(255, 255, 255);
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: rgb(255, 255, 255);
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: rgb(255, 255, 255);
+	border-top-style: none;
+	border-top-width: 0px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	direction: ltr;
+	display: inline-block;
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	height: 16px;
+	letter-spacing: normal;
+	line-height: 13px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	outline-color: rgb(255, 255, 255);
+	outline-style: none;
+	outline-width: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 1px;
+	text-align: center;
+	text-indent: 0px;
+	text-rendering: auto;
+	text-shadow: none;
+	text-transform: none;
+	white-space: nowrap;
+	width: 32.6875px;
+	word-spacing: 0px;
+	word-wrap: break-word;
+	writing-mode: lr-tb;
+	zoom: 1;
+}
+
+#checkbox {
+	-webkit-background-size: 26px 399px;
+	background-image: url('http://fbstatic-a.akamaihd.net/rsrc.php/v2/yf/r/vY_eDIdN1US.png');
+	background-position: 0px -340px;
+	background-repeat: no-repeat;
+	background-size: 26px 399px;
+	color: rgb(166, 166, 166);
+	cursor: pointer;
+	direction: ltr;
+	display: inline-block;
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 12px;
+	height: 17px;
+	line-height: 34px;
+	margin-left: 5px;
+	text-align: right;
+	vertical-align: middle;
+	width: 14px;
+	word-wrap: break-word;
+	zoom: 1;
+}
+
+#enter-text {
+	display: inline-block;
+	color: rgb(166, 166, 166);
+	margin-top: 7px;
+}
