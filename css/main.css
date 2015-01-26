@@ -19,3 +19,11 @@ header.row {
 #websites a {
 	margin-left: 10px;
 }
+
+#courses {
+	padding-left: 25px;
+}
+
+.course-code {
+	font-weight: 400;
+}
