@@ -3,14 +3,21 @@
   <head>
     <title>evanlimanto - Online Portfolio</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="evanlimanto's website"/>
     <meta name="author" content="Evan Putra Limanto">
 
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+
+    <!-- Page -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" type="image/png" href="img/github.png" />
+    <script src="js/main.js"></script>
+
     <script>
+      /* Google Analytics */
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -19,125 +26,145 @@
       ga('create', 'UA-20131732-4', 'auto');
       ga('send', 'pageview');
     </script>
+
   </head>
-  <body>
+  <body onscroll="stickyNav()">
     <div class="container">
-      <header class="row">
-        <span id="title"><b>evanlimanto's Online Portfolio</b></span>
-        <span id="websites" class="pull-right">
-          <a href="https://facebook.com/evan.p.limanto" target="_blank"><img src="img/fb.png" width="24"></a>
-          <a href="http://linkedin.com/pub/evan-putra-limanto/41/229/b26/" target="_blank"><img src="img/linkedin.png" width="24"></a>
-          <a href="http://quora.com/Evan-Putra-Limanto" target="_blank"><img src="img/quora.png" width="24"></a>
-          <a href="http://github.com/evanlimanto" target="_blank"><img src="img/github.png" width="24"></a>
-          <a href="http://hackerrank.com/evanlimanto" target="_blank"><img src="img/hackerrank.svg" width="24"></a>
-          <a href="http://spoj.com/users/evanlimanto" target="_blank"><img src="img/spoj.png" width="24"></a>
-        </span>
-      </header>
-
       <div class="row">
-        <h3 class="page-header">Education</h3>
-        <p class="lead">
-          <dl class="list-unstyled">
-            <dt><a href="http://berkeley.edu">University of California, Berkeley</a>
-            <span class="pull-right">Expected Graduation Date: May 2018</span></dt>
-            <dd>B.S. Electrical Engineering and Computer Science</dd>
-            <dd>B.S. Business Administration (Intended)</dd>
-            <dt>Relevant Coursework</dt>
-            <ul id="courses">
-              <li>Structure and Interpretation of Computer Programs <span class="course-code">(CS 61A)</span></li>
-              <li>Data Structures <span class="course-code">(CS 61B)</span></li>
-              <li>Machine Structures <span class="course-code">(CS 61C)</span></li>
-              <li>Discrete Mathematics and Probability Theory <span class="course-code">(CS 70)</span></li>
-              <li>Designing Information Devices and Systems I <span class="course-code">(EE 16A)</span></li>
-              <li>Physics for Scientists and Engineers <span class="course-code">(Physics 7A)</span></li>
-              <li>Introductory Probability and Statistics for Business <span class="course-code">(Stat 21)<span class="course-code"></li>
-            </ul>
-          </dl>
-        </p>
-      </div>
+        <div class="col-xs-9">
+          <div class="row" id="title"><b>evanlimanto's Online Portfolio</b></div>
+          <div class="row" id="education">
+            <h3 class="page-header">Education</h3>
+            <p class="lead">
+              <dl class="list-unstyled">
+                <dt><a href="http://berkeley.edu">University of California, Berkeley</a>
+                <span class="pull-right">Expected Graduation Date: May 2018</span></dt>
+                <dd>B.S. Electrical Engineering and Computer Science</dd>
+                <dd>B.S. Business Administration (Intended)</dd>
+                <dt>Relevant Coursework</dt>
+                <ul id="courses">
+                  <li>Structure and Interpretation of Computer Programs <span class="course-code">(CS 61A)</span></li>
+                  <li>Data Structures <span class="course-code">(CS 61B)</span></li>
+                  <li>Machine Structures <span class="course-code">(CS 61C)</span></li>
+                  <li>Discrete Mathematics and Probability Theory <span class="course-code">(CS 70)</span></li>
+                  <li>Designing Information Devices and Systems I <span class="course-code">(EE 16A)</span></li>
+                  <li>Physics for Scientists and Engineers <span class="course-code">(Physics 7A)</span></li>
+                  <li>Introductory Probability and Statistics for Business <span class="course-code">(Stat 21)<span class="course-code"></li>
+                </ul>
+              </dl>
+            </p>
+          </div>
 
-      <div class="row">
-        <h3 class="page-header">Honors & Awards</h3>
-        <p class="lead">
-          <dl>
-            <dd>Bronze Medalist, Asia Pacific Informatics Olympiad 2014</dd>
-            <dd>Silver Medalist, Indonesian National Olympiad in Informatics 2013</dd>
-            <dd>4th Place, University of Indonesia Computer Festival Programming Competition 2013</dd>
-            <dd>Full Scholarship Awardee, Bina Bangsa High School 2009 - 2014</dd>
-          </dl>
-        </p>
-      </div>
+          <div class="row" id="honors">
+            <h3 class="page-header">Honors & Awards</h3>
+            <p class="lead">
+              <dl>
+                <dd>Bronze Medalist, Asia Pacific Informatics Olympiad 2014</dd>
+                <dd>Silver Medalist, Indonesian National Olympiad in Informatics 2013</dd>
+                <dd>4th Place, University of Indonesia Computer Festival Programming Competition 2013</dd>
+                <dd>Full Scholarship Awardee, Bina Bangsa High School 2009 - 2014</dd>
+              </dl>
+            </p>
+          </div>
 
-      <div class="row">
-        <h3 class="page-header">Skills</h3>
-        <p class="lead">
-          <dl>
-            <dt>Fluent</dt>
-            <dd>C/C++, PHP, Python, Javascript, HTML, CSS</dd><br/>
-            <dt>Working Knowledge</dt>
-            <dd>jQuery, MySQL, Bootstrap, Git</dd><br/>
-            <dt>Familiar</dt>
-            <dd>Django, Java, Yii, OOP, MVC</dd>
-          </dl>
-        </p>
-      </div>
+          <div class="row" id="skills">
+            <h3 class="page-header">Skills</h3>
+            <p class="lead">
+              <dl>
+                <dt>Fluent</dt>
+                <dd>C/C++, PHP, Python, Javascript, HTML, CSS</dd><br/>
+                <dt>Working Knowledge</dt>
+                <dd>jQuery, MySQL, Bootstrap, Git</dd><br/>
+                <dt>Familiar</dt>
+                <dd>Django, Java, Yii, OOP, MVC</dd>
+              </dl>
+            </p>
+          </div>
 
-      <div class="row">
-        <h3 class="page-header">Work Experience</h3>
-        <p class="lead">
-          <dl class="list-unstyled">
-            <dt><a href="http://eventable.com">Eventable</a><span class="pull-right">Skydeck Incubator | Accelerator, Berkeley, CA</span></dt>
-            <dd>Software Engineering Intern<span class="pull-right">October 2014 - December 2014</span></dd>
-            <ul>
-              <li>Wrote various front-end unit tests and end to end tests in CasperJS and PhantomJS for the core product.</li><li>Fixed and improved the appearance and functionality of various UI elements on many pages.</li><li>Rewrote all main form pages to make full use of Django templating, resulting in hundreds of lines of redundant code removed.</li>
-            </ul>
-          </dl>
-        </p>
-      </div>
+          <div class="row" id="work">
+            <h3 class="page-header">Work Experience</h3>
+            <p class="lead">
+              <dl class="list-unstyled">
+                <dt><a href="http://eventable.com">Eventable</a><span class="pull-right">Skydeck Incubator | Accelerator, Berkeley, CA</span></dt>
+                <dd>Software Engineering Intern<span class="pull-right">October 2014 - December 2014</span></dd>
+                <ul>
+                  <li>Wrote various front-end unit tests and end to end tests in CasperJS and PhantomJS for the core product.</li><li>Fixed and improved the appearance and functionality of various UI elements on many pages.</li><li>Rewrote all main form pages to make full use of Django templating, resulting in hundreds of lines of redundant code removed.</li>
+                </ul>
+              </dl>
+            </p>
+          </div>
 
-      <div class="row">
-        <h3 class="page-header">Projects</h3>
-        <p class="lead">
-          <dl class="list-unstyled">
-            <dt><a href="http://github.com/evanlimanto/gglookup">Graphical Glookup</a></dt>
-            <dd>A graphical web interface and visualization tool for glookup, a command-line utility used by students taking EE and CS classes at UC Berkeley for checking their grades. Built during the HackJam 2014 Hackathon hosted by Hackers at Berkeley.</dd>
-            <ul>
-              <li>Custom Python regular expression scripts extract all the required grade data from ssh-ing into the specified user account and executing the commands to retrieve grades.</li>
-              <li>Flask is used as the back end. It serves data to the front end in the form of JSONP.</li>
-              <li>Bootstrap, jQuery and Chart.js are used for the front end for data visualizations.</li>
-            </ul>
-          </dl>
-          <dl class="list-unstyled">
-            <dt>ProblemHunt</dt>
-            <dd>A problem classifier utility to aid in practicing of competitive programming problems, containing data of over 18000 problems from 8 online judges.</dd>
-            <ul>
-              <li>PHP scripts with custom regular expressions for each online judge are used to extract problem data.</li><li>A MySQL database stores problem and user data.</li> 
-              <li>AJAX and PHP are used to check if a user has solved a specific problem in real time, as the problem table loads.</li>
-              <li>The front end is created with Bootstrap, and the problem list uses the Fuel UX datagrid.</li>
-            </ul>
-          </dl>
-          <dl class="list-unstyled">
-            <dt>Codeforces Case Getter</dt>
-            <dd>A simple utility that allows a user to download the sample cases of all problems in a single Codeforces contest (online coding contest). </dd>
-            <ul>
-              <li>A PHP script extracts test case data from problems and writes them to text files.</li><li>A MySQL database stores problem and user data.</li> 
-              <li>The PHPZip class is used to compress all the files for download.</li>
-              <li>The front end is created with Bootstrap.</li>
-            </ul>
-          </dl>
-        </p>
-      </div>
+          <div class="row" id="projects">
+            <h3 class="page-header">Projects</h3>
+            <p class="lead">
+              <dl class="list-unstyled">
+                <dt><a href="http://github.com/evanlimanto/gglookup">Graphical Glookup</a></dt>
+                <dd>A graphical web interface and visualization tool for glookup, a command-line utility used by students taking EE and CS classes at UC Berkeley for checking their grades. Built during the HackJam 2014 Hackathon hosted by Hackers at Berkeley.</dd>
+                <ul>
+                  <li>Custom Python regular expression scripts extract all the required grade data from ssh-ing into the specified user account and executing the commands to retrieve grades.</li>
+                  <li>Flask is used as the back end. It serves data to the front end in the form of JSONP.</li>
+                  <li>Bootstrap, jQuery and Chart.js are used for the front end for data visualizations.</li>
+                </ul>
+              </dl>
+              <dl class="list-unstyled">
+                <dt>ProblemHunt</dt>
+                <dd>A problem classifier utility to aid in practicing of competitive programming problems, containing data of over 18000 problems from 8 online judges.</dd>
+                <ul>
+                  <li>PHP scripts with custom regular expressions for each online judge are used to extract problem data.</li><li>A MySQL database stores problem and user data.</li> 
+                  <li>AJAX and PHP are used to check if a user has solved a specific problem in real time, as the problem table loads.</li>
+                  <li>The front end is created with Bootstrap, and the problem list uses the Fuel UX datagrid.</li>
+                </ul>
+              </dl>
+              <dl class="list-unstyled">
+                <dt>Codeforces Case Getter</dt>
+                <dd>A simple utility that allows a user to download the sample cases of all problems in a single Codeforces contest (online coding contest). </dd>
+                <ul>
+                  <li>A PHP script extracts test case data from problems and writes them to text files.</li><li>A MySQL database stores problem and user data.</li> 
+                  <li>The PHPZip class is used to compress all the files for download.</li>
+                  <li>The front end is created with Bootstrap.</li>
+                </ul>
+              </dl>
+            </p>
+          </div>
 
-      <div class="row">
-        <h3 class="page-header">Mockups</h3>
-        <p class="lead">
-          <dl class="list-unstyled">
-            <dt><a href="fb.html">Facebook Media</a></dt>
-            <dd>A mockup of a potential Facebook feature which I thought out for the Facebook University internship application, which allows people to stream online media simultaneously on the site.</dd>
-          </dl>
-        </p>
+          <div class="row" id="mockups">
+            <h3 class="page-header">Mockups</h3>
+            <p class="lead">
+              <dl class="list-unstyled">
+                <dt><a href="fb.html">Facebook Media</a></dt>
+                <dd>A mockup of a potential Facebook feature which I thought out for the Facebook University internship application, which allows people to stream online media simultaneously on the site.</dd>
+              </dl>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3" style="padding-right: 0px;">
+          <div id="nav-links">
+            <div id="websites" class="text-right">
+              <a href="https://facebook.com/evan.p.limanto" target="_blank"><img src="img/fb.png" width="24"></a>
+              <a href="http://linkedin.com/pub/evan-putra-limanto/41/229/b26/" target="_blank"><img src="img/linkedin.png" width="24"></a>
+              <a href="http://quora.com/Evan-Putra-Limanto" target="_blank"><img src="img/quora.png" width="24"></a>
+              <a href="http://github.com/evanlimanto" target="_blank"><img src="img/github.png" width="24"></a>
+              <a href="http://hackerrank.com/evanlimanto" target="_blank"><img src="img/hackerrank.svg" width="24"></a>
+              <a href="http://spoj.com/users/evanlimanto" target="_blank"><img src="img/spoj.png" width="24"></a>
+            </div>
+            <div id="navigation-links" style="padding-left: 45px;">
+              <ul class="nav nav-stacked" style="width: 233px;">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#honors">Honors</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#mockups">Mockups</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <span id="arrow-up" class="hidden-xs hidden-sm">
+      <a onclick="animateUp()" style="color: black;"><i class="glyphicon glyphicon-arrow-up"></i></a>
+    </span>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

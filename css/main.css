@@ -24,6 +24,25 @@ header.row {
 	padding-left: 25px;
 }
 
+#navigation-links {
+	margin-top: 20px;
+}
+
+#arrow-up {
+	position: fixed;
+	bottom: 5px;
+	left: 5px;
+}
+
+#arrow-up:hover {
+	cursor: pointer;
+}
+
 .course-code {
 	font-weight: 400;
+}
+
+.fixed-top {
+	position: fixed;
+	top: 20px;
 }
