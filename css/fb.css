@@ -159,7 +159,7 @@ textarea {
 	display: inline-block;
 	position: absolute;
 	bottom: 2%;
-	border-top: 1px solid rgba(0,0,0,0.2);
+	/*border-top: 1px solid rgba(0,0,0,0.2);*/
 	width: 90%;
 	padding-top: 15px;
 }
