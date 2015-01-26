@@ -6,6 +6,10 @@ a {
 	color: #3b5998;
 }
 
+a.active:focus, a:focus {
+	text-decoration: none;
+}
+
 hr {
 	border-top: 1px solid rgba(0,0,0,0.2);
 }
@@ -26,7 +30,22 @@ footer ul {
 
 footer ul li {
 	display: inline;
-	padding: 0px 5px;
+	padding: 0px 5px 0px 0px;
+	color: #767676;
+	font-size: 12px;
+}
+
+#actions {
+	margin-top: 5px;
+	margin-left: 42px;
+	padding-left: 0px;
+}
+
+#actions li {
+	display: inline;
+	padding: 0px 1px 0px 0px;
+	color: #767676;
+	font-size: 12px;
 }
 
 #navbar {
@@ -243,6 +262,7 @@ li.active a {
 	word-wrap: break-word;
 	zoom: 1;
 }
+
 #submit-btn {
 	-webkit-appearance: none;
 	-webkit-background-clip: border-box;
@@ -338,6 +358,18 @@ li.active a {
 	margin-top: 7px;
 }
 
+#stats {
+	padding-left: 0px;
+	margin-top: 5px;
+}
+
+#stats li {
+	list-style-type: none;
+	display: inline;
+	color: black;
+	margin-right: 15px;
+}
+
 #calls {
 	position: absolute;
 	bottom: 2%;
@@ -352,6 +384,30 @@ li.active a {
 
 #calls > li > a:hover, #calls > li > a:focus {
 	background-color: rgb(246, 247, 248);
+}
+
+.icon-like {
+	-webkit-background-size: 17px 200px;
+	background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yu/r/thDhUL-zOkp.png);
+	background-position: 0px -109px;
+	background-repeat: no-repeat;
+	background-size: 17px 200px;
+	border-collapse: collapse;
+	color: rgb(59, 89, 152);
+	cursor: pointer;
+	direction: ltr;
+	display: block;
+	font-family: Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	height: 13px;
+	line-height: 15.3599996566772px;
+	list-style-type: none;
+	text-align: left;
+	width: 15px;
+	word-wrap: break-word;
+	zoom: 1;
+
 }
 
 .icon-clock {
