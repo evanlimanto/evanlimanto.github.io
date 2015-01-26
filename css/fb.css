@@ -18,6 +18,11 @@ textarea {
 	border-radius: 0px !important;
 }
 
+header {
+	margin-top: 20px; 
+	margin-bottom: 10px;
+}
+
 footer {
 	color: #767676;
 	font-size: 0.8em;
@@ -38,13 +43,10 @@ footer ul li {
 #actions {
 	margin-top: 5px;
 	margin-left: 42px;
-	padding-left: 0px;
 }
 
 #actions li {
-	display: inline;
 	padding: 0px 1px 0px 0px;
-	color: #767676;
 	font-size: 12px;
 }
 
@@ -85,7 +87,7 @@ footer ul li {
 }
 
 #navbar li > a {
-	padding: 7px 15px;
+	padding: 10px 15px;
 	color: white;
 }
 
@@ -119,10 +121,6 @@ footer ul li {
 	padding: 0;
 }
 
-#tabContent {
-	height: 100vh;
-}
-
 .spacing {
 	color: rgb(20, 24, 35);
 	direction: ltr;
@@ -134,10 +132,6 @@ footer ul li {
 	margin-top: 0px;
 	text-align: left;
 	width: 205px;
-}
-
-.tab-pane {
-	padding: 15px;
 }
 
 #tabs li {
@@ -156,12 +150,9 @@ li.active, li.active:hover,
 li.active > a, li.active:hover > a {
 	background-color: #4b6399 !important;
 }
+
 li.active a {
 	color: white;
-}
-
-.grey-text {
-	color: #767676;
 }
 
 .user-name {
@@ -201,7 +192,6 @@ li.active a {
 	display: inline-block;
 	position: absolute;
 	bottom: 2%;
-	/*border-top: 1px solid rgba(0,0,0,0.2);*/
 	width: 90%;
 	padding-top: 15px;
 }
@@ -384,6 +374,18 @@ li.active a {
 
 #calls > li > a:hover, #calls > li > a:focus {
 	background-color: rgb(246, 247, 248);
+}
+
+.pad {
+	padding: 15px;
+}
+
+.font-sm {
+	font-size: 12px;
+}
+
+.font-blue {
+	color: #3b5998;
 }
 
 .icon-like {
