@@ -32,17 +32,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-9 col-md-12 col-sm-12">
-          <div class="row" id="title"><b>evanlimanto's Online Portfolio</b></div>
+          <div class="row" id="title"><strong>evanlimanto's Online Portfolio</strong></div>
           <div class="row" id="education">
             <h3 class="page-header">Education</h3>
             <p class="lead">
               <dl class="list-unstyled">
-                <dt><a href="http://berkeley.edu">University of California, Berkeley</a>
-                <span class="pull-right hidden-xs">Expected Graduation Date: May 2018</span></dt>
+                <dt>
+                 <a href="http://berkeley.edu">University of California, Berkeley</a>
+                  <span class="pull-right hidden-xs hidden-sm">Expected Graduation Date: May 2018</span>
+                </dt>
                 <dd>B.S. Electrical Engineering and Computer Science</dd>
                 <dd>B.S. Business Administration (Intended)</dd>
                 <dt>Relevant Coursework</dt>
-                <ul id="courses">
+                <ul class="ul">
                   <li>Structure and Interpretation of Computer Programs <span class="course-code">(CS 61A)</span></li>
                   <li>Data Structures <span class="course-code">(CS 61B)</span></li>
                   <li>Machine Structures <span class="course-code">(CS 61C)</span></li>
@@ -58,12 +60,12 @@
           <div class="row" id="honors">
             <h3 class="page-header">Honors & Awards</h3>
             <p class="lead">
-              <dl>
-                <dd>Bronze Medalist, Asia Pacific Informatics Olympiad 2014</dd>
-                <dd>Silver Medalist, Indonesian National Olympiad in Informatics 2013</dd>
-                <dd>4th Place, University of Indonesia Computer Festival Programming Competition 2013</dd>
-                <dd>Full Scholarship Awardee, Bina Bangsa High School 2009 - 2014</dd>
-              </dl>
+              <ul class="ul">
+                <li>Bronze Medalist, Asia Pacific Informatics Olympiad 2014</li>
+                <li>Silver Medalist, Indonesian National Olympiad in Informatics 2013</li>
+                <li>4th Place, University of Indonesia Computer Festival Programming Competition 2013</li>
+                <li>Full Scholarship Awardee, Bina Bangsa High School 2009 - 2014</li>
+              </ul>
             </p>
           </div>
 
@@ -85,10 +87,10 @@
             <h3 class="page-header">Work Experience</h3>
             <p class="lead">
               <dl class="list-unstyled">
-                <dt><a href="http://eventable.com">Eventable</a><span class="pull-right hidden-xs">Skydeck Incubator | Accelerator, Berkeley, CA</span></dt>
-                <dd>Software Engineering Intern<span class="pull-right hidden-xs">October 2014 - December 2014</span></dd>
+                <dt><a href="http://eventable.com">Eventable</a><span class="pull-right hidden-xs hidden-sm">Skydeck Incubator | Accelerator, Berkeley, CA</span></dt>
+                <dd>Software Engineering Intern<span class="pull-right hidden-xs hidden-sm">October 2014 - December 2014</span></dd>
                 <ul>
-                  <li>Wrote various front-end unit tests and end to end tests in CasperJS and PhantomJS for the core product.</li><li>Fixed and improved the appearance and functionality of various UI elements on many pages.</li><li>Rewrote all main form pages to make full use of Django templating, resulting in hundreds of lines of redundant code removed.</li>
+                  <li>Wrote various front-end unit tests and end to end tests in <strong>CasperJS</strong> and <strong>PhantomJS</strong> for the core product.</li><li>Fixed and improved the appearance and functionality of various UI elements on many pages.</li><li>Rewrote all main form pages to make full use of <strong>Django</strong> templating, resulting in hundreds of lines of redundant code removed.</li>
                 </ul>
               </dl>
             </p>
@@ -105,27 +107,27 @@
                 <dt><a href="http://github.com/evanlimanto/gglookup">Graphical Glookup</a></dt>
                 <dd>A graphical web interface and visualization tool for glookup, a command-line utility used by students taking EE and CS classes at UC Berkeley for checking their grades. Built during the HackJam 2014 Hackathon hosted by Hackers at Berkeley.</dd>
                 <ul>
-                  <li>Custom Python regular expression scripts extract all the required grade data from ssh-ing into the specified user account and executing the commands to retrieve grades.</li>
-                  <li>Flask is used as the back end. It serves data to the front end in the form of JSONP.</li>
-                  <li>Bootstrap, jQuery and Chart.js are used for the front end for data visualizations.</li>
+                  <li>Custom <strong>Python</strong> regular expression scripts extract all the required grade data from ssh-ing into the specified user account and executing the commands to retrieve grades.</li>
+                  <li><strong>Flask</strong> is used as the back end. It serves data to the front end in the form of JSONP.</li>
+                  <li><strong>Bootstrap</strong>, <strong>jQuery</strong> and <strong>Chart.js</strong> are used for the front end for data visualizations.</li>
                 </ul>
               </dl>
               <dl class="list-unstyled">
                 <dt>ProblemHunt</dt>
                 <dd>A problem classifier utility to aid in practicing of competitive programming problems, containing data of over 18000 problems from 8 online judges.</dd>
                 <ul>
-                  <li>PHP scripts with custom regular expressions for each online judge are used to extract problem data.</li><li>A MySQL database stores problem and user data.</li> 
-                  <li>AJAX and PHP are used to check if a user has solved a specific problem in real time, as the problem table loads.</li>
-                  <li>The front end is created with Bootstrap, and the problem list uses the Fuel UX datagrid.</li>
+                  <li><strong>PHP</strong> scripts with custom regular expressions for each online judge are used to extract problem data.</li><li>A MySQL database stores problem and user data.</li> 
+                  <li><strong>AJAX</strong> and <strong>PHP</strong> are used to check if a user has solved a specific problem in real time, as the problem table loads.</li>
+                  <li>The front end is created with <strong>Bootstrap</strong>, and the problem list uses the Fuel UX datagrid.</li>
                 </ul>
               </dl>
               <dl class="list-unstyled">
                 <dt>Codeforces Case Getter</dt>
                 <dd>A simple utility that allows a user to download the sample cases of all problems in a single Codeforces contest (online coding contest). </dd>
                 <ul>
-                  <li>A PHP script extracts test case data from problems and writes them to text files.</li><li>A MySQL database stores problem and user data.</li> 
-                  <li>The PHPZip class is used to compress all the files for download.</li>
-                  <li>The front end is created with Bootstrap.</li>
+                  <li>A <strong>PHP</strong> script extracts test case data from problems and writes them to text files.</li><li>A <strong>MySQL</strong> database stores problem and user data.</li> 
+                  <li>The <strong>PHPZip</strong> class is used to compress all the files for download.</li>
+                  <li>The front end is created with <strong>Bootstrap</strong>.</li>
                 </ul>
               </dl>
             </p>
@@ -155,7 +157,7 @@
       </div>
     </div>
 
-    <span id="arrow-up" class="hidden-sm hidden-sm">
+    <span id="arrow-up" class="hidden-sm hidden-xs">
       <a onclick="animateUp()" style="color: black;"><i class="glyphicon glyphicon-arrow-up"></i></a>
     </span>
 

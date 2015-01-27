@@ -20,10 +20,6 @@ header.row {
 	margin-left: 10px;
 }
 
-#courses {
-	padding-left: 25px;
-}
-
 #navigation-links {
 	margin-top: 20px;
 }
@@ -45,4 +41,8 @@ header.row {
 .fixed-top {
 	position: fixed;
 	top: 20px;
+}
+
+.ul {
+	padding-left: 25px;
 }
