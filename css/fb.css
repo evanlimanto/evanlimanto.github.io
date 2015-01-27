@@ -376,6 +376,19 @@ li.active a {
 	background-color: rgb(246, 247, 248);
 }
 
+.first-chat-person {
+	margin-top: 15px;
+}
+
+.chat-person {
+	padding: 5px 20px;
+}
+
+.desc-text {
+	width: 90px;
+	display: inline-block;
+}
+
 .pad {
 	padding: 15px;
 }

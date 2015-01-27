@@ -50,14 +50,14 @@
 		</nav>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-9" id="content">
+				<div class="col-xs-12 col-md-12 col-lg-9" id="content">
 					<div class="spacing"></div>
 					
 					<header class="row">
 						<div class="col-xs-6">
 							<h4>Movie Session - Home Alone</h4>
 						</div>
-						<div class="col-xs-6 col-xs-push-3">
+						<div class="col-lg-6 col-lg-push-3 col-md-4 col-md-push-3 col-sm-push-2 col-xs-push-1">
 							<table>
 								<tr>
 									<td rowspan="2">
@@ -81,14 +81,14 @@
 					<br/>
 
 					<div class="row">
-						<div class="col-xs-9">
+						<div class="col-xs-12 col-md-9">
 							<table>
 				        		<tr>
 				        			<td rowspan="3">
 				        				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c12.0.64.64/p64x64/10411139_10203106874571349_3830216764233201846_n.jpg?oh=6c43e4873a689a65ff0c466d87604cfc&oe=555A40E1&__gda__=1433069200_24d984ad8ddf45013ae080e886d94745" width="32" height="32" alt="" class="img">
 				        			</td>
 					        		<td>
-					        			<span class="chat-text"><a><strong>Evan</strong></a></span>
+					        			<div class="chat-text"><a><strong>Evan</strong></a></div>
 					        		</td>
 					        	</tr>
 					        	<tr rowspan="2"><td><div class="chat-text">We haven't been watching in a long time, so let's watch one! I found this great video on YouTube which takes about 2 hours, so it should be a decent break for every one of us!</div></td>
@@ -103,8 +103,9 @@
 					        	<li>February 3</li>
 				        	</ul>
 						</div>
-						<div class="col-xs-3 font-sm">
-							<div>Shared with:&nbsp;&nbsp;<span><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;My Family</span></div>
+						<div class="col-xs-3 font-sm text-muted hidden-xs hidden-sm">
+							<div><span class="desc-text text-muted">Shared with:</span>&nbsp;&nbsp;<span><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;My Family</span></div>
+							<div><span class="desc-text text-muted">Streaming from:</span>&nbsp;&nbsp;<i class="glyphicon glyphicon-play"></i>&nbsp;&nbsp;YouTube</div>
 							
 							<ul id="stats"><li><i class="glyphicon glyphicon-eye-open font-blue"></i> 3</li>
 							<li><i class="glyphicon glyphicon-thumbs-up"></i> 2</li></ul>
@@ -112,7 +113,7 @@
 					</div>
 				</div>
 
-				<div id="sidebar" class="col-xs-3">
+				<div id="sidebar" class="col-lg-3 col-md-4 hidden-md hidden-sm hidden-xs">
 					<div class="spacing"></div>
 					<div data-example-id="togglable-tabs">
 					    <ul id="tabs" class="nav" role="tablist">
@@ -120,7 +121,7 @@
 					      		<a href="#chat" id="home-tab" role="tab" data-toggle="tab">Chat</a>
 					      	</li>
 					      	<li class="last">
-					      		<a href="#profile" role="tab" id="profile-tab" data-toggle="tab">People</a>
+					      		<a href="#profile" role="tab" id="profile-tab" data-toggle="tab">People <span id="new-people">(1 new)</span></a>
 					      	</li>
 					    </ul>
 					    <div class="tab-content">
@@ -132,11 +133,11 @@
 						        				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c12.0.64.64/p64x64/10411139_10203106874571349_3830216764233201846_n.jpg?oh=6c43e4873a689a65ff0c466d87604cfc&oe=555A40E1&__gda__=1433069200_24d984ad8ddf45013ae080e886d94745" width="32" height="32" alt="" class="img">
 						        			</td>
 							        		<td>
-							        			<span class="chat-text"><a><strong>Evan</strong></a></span>
+							        			<div class="chat-text"><a><strong>Evan</strong></a></div>
 							        		</td>
 							        	</tr>
-							        	<tr><td><span class="chat-text">Hi guys! How are you doing?</span></td></tr>
-							        	<tr><td><span class="chat-text">Let's watch this movie I just found on YouTube!</span></td></tr>
+							        	<tr><td><div class="chat-text">Hi guys! How are you doing?</div></td></tr>
+							        	<tr><td><div class="chat-text">Let's watch this movie I just found on YouTube!</div></td></tr>
 						        	</table>
 						        	<table class="chat-item">
 						        		<tr>
@@ -144,12 +145,12 @@
 						        				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p64x64/954818_10200184112919704_1316297526_n.jpg?oh=39da87bfaf58f68881872adfb58969e3&amp;oe=555E745A&amp;__gda__=1428691356_54b988053f4612bf13ba1bba6946d948" width="32" height="32" alt="" class="img">
 						        			</td>
 							        		<td>
-							        			<span class="chat-text"><a><strong>Kevin</strong></a></span>
+							        			<div class="chat-text"><a><strong>Kevin</strong></a></div>
 							        		</td>
 							        	</tr>
-							        	<tr><td><span class="chat-text">We're great!</span></td></tr>
-							        	<tr><td><span class="chat-text">Alright!</span></td></tr>
-							        	<tr><td><span class="chat-text">How was vacation, by the way?</span></td></tr>
+							        	<tr><td><div class="chat-text">We're great!</div></td></tr>
+							        	<tr><td><div class="chat-text">Alright!</div></td></tr>
+							        	<tr><td><div class="chat-text">How was vacation, by the way?</div></td></tr>
 						        	</table>
 						        	<table class="chat-item">
 						        		<tr>
@@ -157,13 +158,13 @@
 						        				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/c5.5.64.64/p74x74/222693_217604171590797_4961498_n.jpg?oh=a34c5c2afafa970a09789af838cbca3e&amp;oe=555F5AC6&amp;__gda__=1428211179_607682bb9b2c9b1c3b223976be1abd95" width="32" height="32" alt="" class="img">
 						        			</td>
 							        		<td>
-							        			<span class="chat-text"><a><strong>Chelsea</strong></a></span>
+							        			<div class="chat-text"><a><strong>Chelsea</strong></a></div>
 							        		</td>
 							        	</tr>
-							        	<tr><td><span class="chat-text">It was great</span></td></tr>
-							        	<tr><td><span class="chat-text">We spent hours on the beach</span></td></tr>
-							        	<tr><td><span class="chat-text">And even held an after party</span></td></tr>
-							        	<tr><td><span class="chat-text">How is Mike doing?</span></td></tr>
+							        	<tr><td><div class="chat-text">It was great</div></td></tr>
+							        	<tr><td><div class="chat-text">We spent hours on the beach</div></td></tr>
+							        	<tr><td><div class="chat-text">And even held an after party</div></td></tr>
+							        	<tr><td><div class="chat-text">How is Mike doing?</div></td></tr>
 						        	</table>
 						        	<table class="chat-item">
 						        		<tr>
@@ -171,10 +172,10 @@
 						        				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c205.44.550.550/s100x100/299122_111803112264111_484821548_n.jpg?oh=222575d638512bb5118ac9da8d733efa&oe=55267F99&__gda__=1431928945_aa4ce36f5d5c08c577791067bfa295e5" width="32" height="32" alt="" class="img">
 						        			</td>
 							        		<td>
-							        			<span class="chat-text"><a><strong>Sophia</strong></a></span>
+							        			<div class="chat-text"><a><strong>Sophia</strong></a></div>
 							        		</td>
 							        	</tr>
-							        	<tr><td><span class="chat-text">Mike is doing fine, thanks for asking!</span></td></tr>
+							        	<tr><td><div class="chat-text">Mike is doing fine, thanks for asking!</div></td></tr>
 						        	</table>
 						        	<hr class="in-chat-hr">
 						        	<p align="center" class="time-item">
@@ -187,10 +188,10 @@
 						        				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c12.0.64.64/p64x64/10411139_10203106874571349_3830216764233201846_n.jpg?oh=6c43e4873a689a65ff0c466d87604cfc&oe=555A40E1&__gda__=1433069200_24d984ad8ddf45013ae080e886d94745" width="32" height="32" alt="" class="img">
 						        			</td>
 							        		<td>
-							        			<span class="chat-text"><a><strong>Evan</strong></a></span>
+							        			<div class="chat-text"><a><strong>Evan</strong></a></div>
 							        		</td>
 							        	</tr>
-							        	<tr><td><span class="chat-text">That kid was really funny!</span></td></tr>
+							        	<tr><td><div class="chat-text">That kid was really funny!</div></td></tr>
 						        	</table>
 						        	<table class="chat-item">
 						        		<tr>
@@ -198,10 +199,10 @@
 						        				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c205.44.550.550/s100x100/299122_111803112264111_484821548_n.jpg?oh=222575d638512bb5118ac9da8d733efa&oe=55267F99&__gda__=1431928945_aa4ce36f5d5c08c577791067bfa295e5" width="32" height="32" alt="" class="img">
 						        			</td>
 							        		<td>
-							        			<span class="chat-text"><a><strong>Sophia</strong></a></span>
+							        			<div class="chat-text"><a><strong>Sophia</strong></a></div>
 							        		</td>
 							        	</tr>
-							        	<tr><td><span class="chat-text">Yeah, I think she's just like me.</span></td></tr>
+							        	<tr><td><div class="chat-text">Yeah, I think he's really hilarious!</div></td></tr>
 						        	</table>
 						        	<hr class="in-chat-hr">
 						        	<p align="center" class="time-item">
@@ -214,10 +215,10 @@
 						        				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/c5.5.64.64/p74x74/222693_217604171590797_4961498_n.jpg?oh=a34c5c2afafa970a09789af838cbca3e&amp;oe=555F5AC6&amp;__gda__=1428211179_607682bb9b2c9b1c3b223976be1abd95" width="32" height="32" alt="" class="img">
 						        			</td>
 							        		<td>
-							        			<span class="chat-text"><a><strong>Chelsea</strong></a></span>
+							        			<div class="chat-text"><a><strong>Chelsea</strong></a></div>
 							        		</td>
 							        	</tr>
-							        	<tr><td><span class="chat-text">It was a great movie.</span></td></tr>
+							        	<tr><td><div class="chat-text">It was a great movie.</div></td></tr>
 						        	</table>
 						        	<table class="chat-item">
 						        		<tr>
@@ -225,10 +226,10 @@
 						        				<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p64x64/954818_10200184112919704_1316297526_n.jpg?oh=39da87bfaf58f68881872adfb58969e3&amp;oe=555E745A&amp;__gda__=1428691356_54b988053f4612bf13ba1bba6946d948" width="32" height="32" alt="" class="img">
 						        			</td>
 							        		<td>
-							        			<span class="chat-text"><a><strong>Kevin</strong></a></span>
+							        			<div class="chat-text"><a><strong>Kevin</strong></a></div>
 							        		</td>
 							        	</tr>
-							        	<tr><td><span class="chat-text">I agree!</span></td></tr>
+							        	<tr><td><div class="chat-text">I agree!</div></td></tr>
 						        	</table>
 						        </div>
 					     		<div id="chat-controls">
@@ -242,16 +243,13 @@
 								</div>
 					     	</div>
 					      	<div class="tab-pane" id="profile">
-						        <div class="pad">
-						        	<p><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p64x64/954818_10200184112919704_1316297526_n.jpg?oh=39da87bfaf58f68881872adfb58969e3&amp;oe=555E745A&amp;__gda__=1428691356_54b988053f4612bf13ba1bba6946d948" width="32" height="32" alt="" class="img">
-						        	<span class="user-name">Evan</span>
-						        	<span class="device">Web&nbsp;&nbsp;<i class="icon-online"></i></span>
-						        	</p>
-						        	<p><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/c5.5.64.64/p74x74/222693_217604171590797_4961498_n.jpg?oh=a34c5c2afafa970a09789af838cbca3e&amp;oe=555F5AC6&amp;__gda__=1428211179_607682bb9b2c9b1c3b223976be1abd95" width="32" height="32" alt="" class="img">
-						        	<span class="user-name">Chelsea</span>
-						        	<span class="device">Mobile&nbsp;&nbsp;<i class="icon-online"></i></span>
-						        	</p>
-						        </div>
+					        	<div class="chat-person first-chat-person"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/p64x64/954818_10200184112919704_1316297526_n.jpg?oh=39da87bfaf58f68881872adfb58969e3&amp;oe=555E745A&amp;__gda__=1428691356_54b988053f4612bf13ba1bba6946d948" width="32" height="32" alt="" class="img">
+					        	<span class="user-name">Kevin</span>
+					        	<span class="device">Web&nbsp;&nbsp;<i class="icon-online"></i></span>
+					        	</div>
+					        	<div class="chat-person"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/c5.5.64.64/p74x74/222693_217604171590797_4961498_n.jpg?oh=a34c5c2afafa970a09789af838cbca3e&amp;oe=555F5AC6&amp;__gda__=1428211179_607682bb9b2c9b1c3b223976be1abd95" width="32" height="32" alt="" class="img">
+					        	<span class="user-name">Chelsea</span>
+					        	<span class="device">Mobile&nbsp;&nbsp;<i class="icon-online"></i></span></div>
 
 					        	<ul class="nav nav-pills" id="calls">
 						        	<li><a class="text-center" href='#'><strong><i class="glyphicon glyphicon-facetime-video"></i>&nbsp;&nbsp;&nbsp;&nbsp;Start Video Call</strong></a></li>
@@ -265,9 +263,11 @@
 
 			<footer>
 				<ul>
-					<li>Designed and built by <a href='http://github.com/evanlimanto'>@evanlimanto</a></li>
+					<li>A mockup by <a href='http://github.com/evanlimanto'>@evanlimanto</a> with <a href='http://getbootstrap.com'>Twitter Bootstrap</a></li>
 					<li>·</li>
 					<li>Images, Styling and Colors taken from <a href='http://facebook.com'>Facebook</a></li>
+					<li>·</li>
+					<li>Read more <a href='index.html#mockups'>here</a>.</li>
 				</ul>
 			</footer>
 		</div>
@@ -275,5 +275,13 @@
 		<!-- Bootstrap -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$('#profile-tab').click(function(){
+					$("#new-people").remove();
+				});
+			});
+		</script>
 	</body>
 </html>
