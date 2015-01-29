@@ -22,6 +22,12 @@ header.row {
 
 #navigation-links {
 	margin-top: 20px;
+	padding-left: 20px;
+}
+
+#navigation-links li {
+	list-style-type: none;
+	display: inline;
 }
 
 #arrow-up {
@@ -31,6 +37,14 @@ header.row {
 }
 
 #arrow-up:hover {
+	cursor: pointer;
+}
+
+#contact {
+	padding-left: 60px;
+}
+
+#top:hover {
 	cursor: pointer;
 }
 
