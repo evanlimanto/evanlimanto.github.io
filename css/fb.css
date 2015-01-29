@@ -40,6 +40,10 @@ footer ul li {
 	font-size: 12px;
 }
 
+.embed-responsive.embed-responsive-16by9 {
+	padding-bottom: 54.25%;
+}
+
 .navbar-nav {
 	margin: 0px;
 }
