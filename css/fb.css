@@ -199,6 +199,12 @@ li.active a {
 	height: 24px;
 	border-right: 0px;
 	border: 0px;
+	padding-left: 8px; 
+	font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif; 
+	text-indent: 2px; 
+	font-size: 14px; 
+	font-weight: 200; 
+	letter-spacing: 0.4px;
 }
 
 #search-button {
