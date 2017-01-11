@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <style>
+        img {
+            width: 500px;
+            height: 500px;
+        }
+        code {
+            position: relative;
+            top:10px;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+        <h1>Assignment 1 (<a href='../'>Home</a>)</h1>
+        <h3>Single Point Light (Diffuse only)</h3>
+        <img src='diffuse-single.png' /><br/>
+        <code>./as1 -kd .8 .8 .8 -pl 1 0 2 .8 .5 .8 -ka .1 .1 .1 -o diffuse-single.png</code>
+        <h3>Single Point Light (Specular only)</h3>
+        <img src='specular-point.png' /><br/>
+        <code>./as1 -ks .8 .8 .8 -pl -1 0 2 .9 .6 .3 -sp 5 -ka .2 .2 .2 -o specular-point.png</code>
+        <h3>Single Directional Light (Specular only)</h3>
+        <img src='specular-directional.png' /><br/>
+        <code>./as1 -ks .8 .8 .8 -dl 1 0 -2 .3 .6 .9 -sp 5 -ka .2 .2 .2 -o specular-directional.png</code>
+        <h3>Single Directional Light (Specular and Diffuse)</h3>
+        <img src='specular-diffuse.png' /><br/>
+        <code>./as1 -ks .9 .9 .9 -dl -2 0 -4 .9 .8 .6 -sp 5 -kd .9 .9 .9 -o specular-diffuse.png</code>
+        <h3>Anisotropic and Specular</h3>
+        <img src='anisotropic-specular.png' /><br/>
+        <code>./as1 -spu 10 -spv 2 -ks .9 .9 .9 -dl -1 -1 -1 .7 .9 .9 -ka .2 .2 .2 -o anisotropic-specular.png</code>
+        <h3>Multiple Lights</h3>
+        <img src='multiple-lights.png' /><br/>
+        <code>./as1 -kd .7 .5 .8 -ks .5 .8 .7 -sp 2 -dl -1 -1 -1 1 1 1 -pl 1 0 1 1 0 0 -pl -5 3 1 1.0 0.5 1.0 -dl 1 3 0 0.2 1.0 0.8 -o multiple-lights.png</code>
+        <h3>Ashikhmin Shirley Model</h3>
+        <img src='ashikhmin-shirley.png' /><br/>
+        <code>./as1 -spu 10 -spv 5 -kd 1.0 1.0 1.0 -ks 1.0 1.0 1.0 -dl -1 1 0 1.0 1.0 1.0 -dl 1 1 -1 .9 .9 .6 -dl 0 -2 -1 .2 .7 .9 -dl 1 1 1 .9 .6 .3 -dl -1 -1 -1 .7 .4 .9 -asm -o ashikhmin-shirley.png</code>
+        <h3>Toon</h3>
+        <img src='toon.png' /><br/>
+        <code>./as1 -sp 2 -kd .3 .3 .3 -ks .3 .3 .3 -dl -1 1 -1 .7 .7 .7 -dl 1 1 -1 .6 .6 .3 -dl 0 -2 -1 0 .5 .7 -dl 1 1 1 .9 .6 .3 -dl -1 -1 -1 .7 .4 .9 -toon -o toon.png</code>
+    </div>
+</body>
+</html>
