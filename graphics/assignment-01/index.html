@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
     <style>
         img {
             width: 500px;
@@ -17,30 +17,72 @@
 <body>
 	<div class="container">
         <h1>Assignment 1 (<a href='../'>Home</a>)</h1>
-        <h3>Single Point Light (Diffuse only)</h3>
-        <img src='diffuse-single.png' /><br/>
-        <code>./as1 -kd .8 .8 .8 -pl 1 0 2 .8 .5 .8 -ka .1 .1 .1 -o diffuse-single.png</code>
-        <h3>Single Point Light (Specular only)</h3>
-        <img src='specular-point.png' /><br/>
-        <code>./as1 -ks .8 .8 .8 -pl -1 0 2 .9 .6 .3 -sp 5 -ka .2 .2 .2 -o specular-point.png</code>
-        <h3>Single Directional Light (Specular only)</h3>
-        <img src='specular-directional.png' /><br/>
-        <code>./as1 -ks .8 .8 .8 -dl 1 0 -2 .3 .6 .9 -sp 5 -ka .2 .2 .2 -o specular-directional.png</code>
-        <h3>Single Directional Light (Specular and Diffuse)</h3>
-        <img src='specular-diffuse.png' /><br/>
-        <code>./as1 -ks .9 .9 .9 -dl -2 0 -4 .9 .8 .6 -sp 5 -kd .9 .9 .9 -o specular-diffuse.png</code>
-        <h3>Anisotropic and Specular</h3>
-        <img src='anisotropic-specular.png' /><br/>
-        <code>./as1 -spu 10 -spv 2 -ks .9 .9 .9 -dl -1 -1 -1 .7 .9 .9 -ka .2 .2 .2 -o anisotropic-specular.png</code>
-        <h3>Multiple Lights</h3>
-        <img src='multiple-lights.png' /><br/>
-        <code>./as1 -kd .7 .5 .8 -ks .5 .8 .7 -sp 2 -dl -1 -1 -1 1 1 1 -pl 1 0 1 1 0 0 -pl -5 3 1 1.0 0.5 1.0 -dl 1 3 0 0.2 1.0 0.8 -o multiple-lights.png</code>
-        <h3>Ashikhmin Shirley Model</h3>
-        <img src='ashikhmin-shirley.png' /><br/>
-        <code>./as1 -spu 10 -spv 5 -kd 1.0 1.0 1.0 -ks 1.0 1.0 1.0 -dl -1 1 0 1.0 1.0 1.0 -dl 1 1 -1 .9 .9 .6 -dl 0 -2 -1 .2 .7 .9 -dl 1 1 1 .9 .6 .3 -dl -1 -1 -1 .7 .4 .9 -asm -o ashikhmin-shirley.png</code>
-        <h3>Toon</h3>
-        <img src='toon.png' /><br/>
-        <code>./as1 -sp 2 -kd .3 .3 .3 -ks .3 .3 .3 -dl -1 1 -1 .7 .7 .7 -dl 1 1 -1 .6 .6 .3 -dl 0 -2 -1 0 .5 .7 -dl 1 1 1 .9 .6 .3 -dl -1 -1 -1 .7 .4 .9 -toon -o toon.png</code>
+        <p>Phong Illumination Model - Point and Directional Lights</p>
+        <p>Program takes in a series of command line options:</p>
+        <ul>
+            <li><i>-ka r g b</i><p>This is the ambient color coefficients of the sphere material. The parameters r g b are num- bers between 0 and 1 inclusive.</p></li>
+            <li><i>-kd r g b</i><p>This is the diffuse color coefficients of the sphere material. The parameters r g b are numbers between 0 and 1 inclusive.</p></li>
+            <li><i>-ks r g b</i><p>This is the specular color coefficients of the sphere material. The parameters r g b are numbers between 0 and 1 inclusive.</p></li>
+            <li><i>-spu pu</i><p>This is the power coefficient on the specular term in the u direction for an anisotropic material. It is a number between 0 and max_float.</p></li>
+            <li><i>-spv pv</i><p>This is the power coefficient on the specular term in the v direction for an anisotropic material. It is a number between 0 and max_float.</li>
+            <li><i>-sp p</i><p>This is the power coefficient on the specular term for an isotropic material. It is a number between 0 and max_float. (i.e. the same as setting pu and pv the the same value.)</p></li>
+            <li><i>-pl x y z r g b</i><p>This adds a point light to the scene. The x y z values are the location of the light. The r g b values are it's color. Note that the x y z values are relative to the sphere. That is, the center of the sphere is at the origin and the radius of the sphere defines one unit of length. The Y direc- tion is UP, the X direction is to the right on the screen, and the Z direction is "in your face." The r g b value are between 0 and max_float, NOT between 0 and 1 (that is, the r g b values en- code the brightness of the light).</p></li>
+            <li><i>-dl x y z r g b</i><p>This adds a directional light to the scene. The x y z values are the direction that the light points in. The r g b values are it's color. See -pl for coordinate system notes.</p></li>
+        </ul>
+        <div class="container">
+            <h2>Outputs</h2>
+            <div class="col-md-6">
+                <h3>Single Point Light (Diffuse only)</h3>
+                <img src='diffuse-single.png' /><br/>
+                <code>./as1 -kd .8 .8 .8 -pl 1 0 2 .8 .5 .8 -ka .1 .1 .1 -o diffuse-single.png</code>
+            </div>
+            <div class="col-md-6">
+                <h3>Single Point Light (Specular only)</h3>
+                <img src='specular-point.png' /><br/>
+                <code>./as1 -ks .8 .8 .8 -pl -1 0 2 .9 .6 .3 -sp 5 -ka .2 .2 .2</code>
+                <code>-o specular-point.png</code>
+            </div>
+            <div class="col-md-6">
+                <h3>Single Directional Light (Specular only)</h3>
+                <img src='specular-directional.png' /><br/>
+                <code>./as1 -ks .8 .8 .8 -dl 1 0 -2 .3 .6 .9 -sp 5 -ka .2 .2 .2</code>
+                <code>-o specular-directional.png</code>
+            </div>
+            <div class="col-md-6">
+                <h3>Single Directional Light (Specular and Diffuse)</h3>
+                <img src='specular-diffuse.png' /><br/>
+                <code>./as1 -ks .9 .9 .9 -dl -2 0 -4 .9 .8 .6 -sp 5 -kd .9 .9 .9</code>
+                <code>-o specular-diffuse.png</code>
+            </div>
+            <div class="col-md-6">
+                <h3>Anisotropic and Specular</h3>
+                <img src='anisotropic-specular.png' />
+                <code>./as1 -spu 10 -spv 2 -ks .9 .9 .9 -dl -1 -1 -1 .7 .9 .9</code>
+                <code>-ka .2 .2 .2 -o anisotropic-specular.png</code>
+            </div>
+            <div class="col-md-6">
+                <h3>Multiple Lights</h3>
+                <img src='multiple-lights.png' />
+                <code>./as1 -kd .7 .5 .8 -ks .5 .8 .7 -sp 2 -dl -1 -1 -1 1 1 1</code>
+                <code>-pl 1 0 1 1 0 0 -pl -5 3 1 1.0 0.5 1.0 -dl 1 3 0 0.2 1.0 0.8</code></br/>
+                <code>-o multiple-lights.png</code>
+            </div>
+            <div class="col-md-6">
+                <h3>Ashikhmin Shirley Model</h3>
+                <img src='ashikhmin-shirley.png' />
+                <code>./as1 -spu 10 -spv 5 -kd 1.0 1.0 1.0 -ks 1.0 1.0 1.0</code>
+                <code>-dl -1 1 0 1.0 1.0 1.0 -dl 1 1 -1 .9 .9 .6</code>
+                <code>-dl 0 -2 -1 .2 .7 .9 -dl 1 1 1 .9 .6 .3</code>
+                <code>-dl -1 -1 -1 .7 .4 .9 -asm -o ashikhmin-shirley.png</code>
+            </div>
+            <div class="col-md-6">
+                <h3>Toon</h3>
+                <img src='toon.png' />
+                <code>./as1 -sp 2 -kd .3 .3 .3 -ks .3 .3 .3 -dl -1 1 -1 .7 .7 .7</code>
+                <code>-dl 1 1 -1 .6 .6 .3 -dl 0 -2 -1 0 .5 .7 -dl 1 1 1 .9 .6 .3</code>
+                <code>-dl -1 -1 -1 .7 .4 .9 -toon -o toon.png</code>
+            </div>
+        </div>
     </div>
 </body>
 </html>
