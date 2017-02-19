@@ -178,7 +178,7 @@
 	                _react2.default.createElement(
 	                    'h2',
 	                    null,
-	                    'React PivotTable'
+	                    'React Pivot Table'
 	                ),
 	                pivotTable,
 	                _react2.default.createElement(
