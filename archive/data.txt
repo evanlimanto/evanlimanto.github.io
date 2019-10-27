@@ -1,0 +1,8 @@
+Event Loops:
+https://www.construct.net/en/blogs/construct-official-blog-1/write-low-garbage-real-time-761
+https://acemood.github.io/2016/02/01/event-loop-in-javascript/
+https://blog.libtorrent.org/2012/10/asynchronous-disk-io/
+https://blog.insiderattack.net/event-loop-best-practices-nodejs-event-loop-part-5-e29b2b50bfe2
+
+dns.resolve VS dns.lookup (former is async, latter is sync)
+- https://github.com/request/request/issues/2491
