@@ -28,7 +28,6 @@ minima:
   social_links:
     github:  evanlimanto
     linkedin: evanlimanto
-google_analytics: true
 
 # Build settings
 theme: minima
