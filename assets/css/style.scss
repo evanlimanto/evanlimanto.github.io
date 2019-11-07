@@ -1,0 +1,20 @@
+---
+---
+
+@import "minima";
+
+* {
+  background-color: #F6F6EF;
+}
+
+a, p, h1, h2, h3, span {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.site-header, .site-footer {
+  border: none !important;
+}
+
+.site-header {
+  padding-top: 20px;
+}
