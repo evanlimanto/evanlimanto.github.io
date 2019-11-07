@@ -9,7 +9,7 @@ Or, “*What I Wished I Had Done When I Started as a New Grad Software Engineer*
 <br/>
 It’s your first day of work after graduation.
 
-You walk through the office entrance and greet the receptionist, secretly relieved that you no longer have to endure yet another visitor check-in on Envoy. Someone cheerfully greets you, motioning to follow them to your desk, where everyone on your new team looks deeply engrossed in work. You reassure yourself that this is the opportunity you’ve been looking forward to.
+You walk through the office entrance and greet the receptionist, secretly relieved that you no longer have to endure *yet another visitor check-in on Envoy*. Someone cheerfully greets you, motioning to follow them to your desk, where everyone on your new team looks deeply engrossed in work. You reassure yourself that this is the opportunity you’ve been looking forward to.
 
 The next few days pass by in a blur, punctuated with onboarding talks whose dense content you’ll probably forget, and coffee chats with more co-workers than you can count from various teams at the company. You eventually settle into a routine, doing biweekly sprints with your team, building new features, engaging in one-on-ones with your team members, et cetera.
 
