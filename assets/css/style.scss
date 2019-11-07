@@ -7,8 +7,12 @@
   background-color: #F6F6EF;
 }
 
-a, p, h1, h2, h3, span {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+a, p, h1, h2, h3, span, li {
+  font-family: "freight-sans-pro", "Arial";
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .site-header, .site-footer {
