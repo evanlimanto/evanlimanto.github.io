@@ -4,8 +4,6 @@ title:  Modes of Thinking
 date:   2021-04-10
 ---
 
-# Modes of Thinking
-
 Life is not a well-defined math problem whose solution space is known a priori. There often are multiple ways of doing an action, no matter how simple, each with their own nuances. That said, more than one of them can yield pretty optimal outcomes. Realizing *and* internalizing that each action — no matter how insignificant — can be approached in multiple ways has made the human experience much more colorful.
 
 Such a framework, applied the act of thinking, is particularly apt. By experience, putting my brain into various "modes of thinking" depending on the context has yielded productive outcomes. I'm not referring to what is commonly named "mental models". This is in essence a multiple select switch I've been able to explicitly turn on before starting to think about something, aligning my subsequent thought processes along a certain vector, with a unique direction and magnitude.

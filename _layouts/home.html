@@ -20,7 +20,7 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-          {%- if post.hn_url != -%}
+          {%- if post.hn_url != null -%}
             <a href="{{ post.hn_url | escape }}"><small>HN Discussion</small></a>
           {%- endif -%}
         </h3>
