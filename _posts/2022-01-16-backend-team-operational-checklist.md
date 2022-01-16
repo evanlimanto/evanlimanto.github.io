@@ -18,7 +18,6 @@ In the end, the outcome for all these processes boil down to the following:
 Fundamentally, through these tools, we seek to minimize confusion, time wasted, and uncertainty on fulfilling the team's raison d'etre.
 
 ## Checklist
-
 ### Internal
 - Oncall process.
 - Periodic team socials.
